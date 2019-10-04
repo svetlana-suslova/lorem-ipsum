@@ -1,0 +1,29 @@
+.menu
+ height: 51px
+ width: 100%
+ background-color: $text-color-dark
+ border-top: 1px solid lighten($text-color-dark, 10)
+ border-bottom: 1px solid lighten($text-color-dark, 10)
+ position: fixed
+ top: 0
+ z-index: 666
+ &-items
+  margin-left: 0px
+ &-item
+  display: inline
+  font-size: 13px
+  font-weight: 500
+  text-transform: uppercase
+  line-height: 14px
+  list-style-type: none
+  &__link
+   text-decoration: none
+   color: $text-color-light
+   &:hover
+    cursor: pointer
+    color: $active-color
+.dashed
+	border-right: 1px dashed lighten($text-color-dark, 10)
+	margin-right: 15px
+	padding-right: 21px
+  

@@ -1,0 +1,51 @@
+.screen
+	padding-top: 35px
+	padding-bottom: 60px
+	background: #373737 url(../img/screen/screen-bg.jpg) center  no-repeat
+	background-size: cover
+	color: $text-color-light
+	&-img
+		position: relative /*сделать родителя жестким*/
+		&::before
+			content: ''
+			position: absolute /*манипулировать дочерним*/
+			width: 370px
+			height: 370px
+			left: 50%
+			margin-left: -195px
+			border: 1px solid #fff
+			border-radius: 50%
+			z-index: -1
+	&-text
+		&__title
+			font-size: 41px
+			font-weight: 700
+			margin-bottom: 15px
+		&__subtitle
+			font-size: 28px
+			font-weight: 300
+			margin-bottom: 27px
+	&-form
+		padding: 30px 27px
+		background-color: rgba(255, 255, 255, 0.2)
+		.form
+			margin-bottom: 12px
+		&__title
+		 display: block
+			padding-right: 77px
+			font-size: 20px
+			font-weight: 300
+			line-height: 30px
+			margin-bottom: 20px
+			&_important
+				font-weight: 700
+				text-transform: uppercase
+				display: block
+		&__input
+		 width: 300px
+		&__button
+		 width: 160px
+   height: 56px
+		&_small
+			font-size: 14px
+			font-weight: 300

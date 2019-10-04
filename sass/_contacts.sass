@@ -1,0 +1,58 @@
+.contacts
+	position: relative
+	&-block
+	 position: absolute
+	 top: 15%
+	 left: 65%
+	 background-color: $text-color-light
+	 padding: 35px
+	 font-size: 13px
+	 font-weight: 300
+	 .section-title
+	  display: none
+	 &__text
+	  margin-bottom: 15px
+	  &:last-child
+	   margin-bottom: 0
+	 &__title
+	  display: block
+	  font-size: 15px
+	  font-weight: 700
+	  margin-bottom: 2px
+	 &__address
+	  &::before
+	   content: ''
+    width: 17px
+    height: 25px
+    background: url(../img/contacts/location-icon.png) center no-repeat
+    display: inline-block
+    vertical-align: middle
+    margin-right: 5px
+  &__phone
+	  &::before
+	   content: ''
+    width: 17px
+    height: 23px
+    background: url(../img/contacts/phone-icon.png) center no-repeat
+    display: inline-block
+    vertical-align: middle
+    margin-right: 5px
+  &__mail
+	  &::before
+	   content: ''
+    width: 20px
+    height: 14px
+    background: url(../img/contacts/mail-icon.png) center no-repeat
+    display: inline-block
+    vertical-align: middle
+    margin-right: 5px
+.footer
+ height: 88px
+ width: 100%
+ background-color: $text-color-dark
+ color: $text-color-light
+ text-align: center
+ font-size: 13px
+ font-weight: 300
+ line-height: 88px
+ margin-top: -4px
