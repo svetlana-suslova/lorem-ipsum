@@ -3,9 +3,12 @@ window.addEventListener('DOMContentLoaded', function() {
      $('.header-contacts__button').on("click", function(){
                $('.overlay').fadeIn('slow');
           });
-          $('.popup-close').on("click", function(){
-               $('.overlay').fadeOut('slow');
+     $('.contacts-block__button').on("click", function(){
+               $('.overlay').fadeIn('slow');
           });
+     $('.popup-close').on("click", function(){
+          $('.overlay').fadeOut('slow');
+     });
 
   let link = $('.header-menu-mobile__link');
   let menu = $('.menu');
