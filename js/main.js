@@ -1,4 +1,24 @@
 window.addEventListener('DOMContentLoaded', function() {
+// Mobile menu
+     $('.header-contacts__button').on("click", function(){
+               $('.overlay').fadeIn('slow');
+          });
+          $('.popup-close').on("click", function(){
+               $('.overlay').fadeOut('slow');
+          });
+
+  let link = $('.header-menu-mobile__link');
+  let menu = $('.menu');
+  let menu_item = $('.menu-item');
+          link.on("click", function(){
+               link.toggleClass('header-menu-mobile__link_active');
+               menu.toggleClass('menu-active');
+          });
+          menu_item.on("click", function(){
+               link.toggleClass('header-menu-mobile__link_active');
+               menu.toggleClass('menu-active');
+          });
+
 	// Form
 	let message = new Object();
 	message.loading = "Loading...";
@@ -12,7 +32,7 @@ window.addEventListener('DOMContentLoaded', function() {
 	    statusMessage.classList.add('status');
 	    statusMessage.style.color = '#00b6ff';
 	    statusMessage.style.textAlign = 'center';
-//AJAX 
+     //AJAX 
      function sendAjaxForm(form) {
           input = form.getElementsByTagName('input'),  
           event.preventDefault();
@@ -53,9 +73,5 @@ window.addEventListener('DOMContentLoaded', function() {
      popupForm.addEventListener('submit', function(event) {
           sendAjaxForm(popupForm);
      });
-
-
-
-
 
 	});
