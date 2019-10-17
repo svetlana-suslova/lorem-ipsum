@@ -1,5 +1,5 @@
 window.addEventListener('DOMContentLoaded', function() {
-// Mobile menu
+//Popup open/close
      $('.header-contacts__button').on("click", function(){
                $('.overlay').fadeIn('slow');
           });
@@ -9,7 +9,7 @@ window.addEventListener('DOMContentLoaded', function() {
      $('.popup-close').on("click", function(){
           $('.overlay').fadeOut('slow');
      });
-
+// Mobile menu
   let link = $('.header-menu-mobile__link');
   let menu = $('.menu');
   let menu_item = $('.menu-item');
